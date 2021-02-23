@@ -1,0 +1,14 @@
+.posta, .dado {
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+}
+
+.posta {
+    background-color: cadetblue;
+}
+
+
+.dado {
+    background-color: burlywood;
+}
