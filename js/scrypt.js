@@ -15,15 +15,16 @@ document.getElementById("btn_send").addEventListener("click",
     function(){
         var utnMail = document.getElementById("pst").value;
         console.log(utnMail)
-        if ( utnMail = email[0],
-             utnMail = email[1],
-             utnMail = email[2],
-             utnMail = email[3],
-             utnMail = email[4]){
-             document.getElementById("answer").innerHTML = "Email valida, puoi accedere!";   
+        for ( i = 0; i < email.length; i++) {
+            if (utnMail == email[i]) {
+                document.getElementById("answer").innerHTML = "Email valida, accesso consentito!";
+                i = email.length;
+            } else {
+                document.getElementById("answer").innerHTML = "Email invalida, accesso vietato!";
+            }
         }
+       
 
-        document.getElementById("answer").innerHTML = "Email invalida, accesso vietato!";
     }
 )
 
