@@ -32,8 +32,8 @@ document.getElementById("btn_send").addEventListener("click",
 
 document.getElementById("btn_dado").addEventListener("click",
     function(){
-        var player =document.getElementById("num_ply").innerHTML = Math.floor(Math.random()*10);
-        var cpu = document.getElementById("num_cpu").innerHTML = Math.floor(Math.random()*10);
+        var player =document.getElementById("num_ply").innerHTML = Math.floor(Math.random()*(1, 6 + 1));
+        var cpu = document.getElementById("num_cpu").innerHTML = Math.floor(Math.random()*(1, 6 + 1));
         if (player > cpu) {
             document.getElementById("winner").innerHTML = "Hai vinto!";
         } else if (player < cpu) {
